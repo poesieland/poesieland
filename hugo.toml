@@ -1,4 +1,4 @@
-baseURL = 'http://poesieland.free.fr/'
+baseURL = 'http://poesieland.github.io/'
 languageCode = 'fr-FR'
 title = 'Poesieland'
 # Add it only if you keep the theme in the `themes` directory.
@@ -115,6 +115,8 @@ themeVariantAuto = [ "relearn-light", "relearn-dark" ]
 [params.relearn.dependencies]
   [params.relearn.dependencies.chartjs]
     name = "Chartjs"
+  [params.relearn.dependencies.lunrPlugin]
+    name = "LunrPlugin"
 
 [params.imageEffects]
   border = false
