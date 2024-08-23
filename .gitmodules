@@ -1,6 +1,7 @@
 [submodule "themes/hugo-theme-relearn"]
 	path = themes/hugo-theme-relearn
-	url = https://github.com/McShelby/hugo-theme-relearn.git
+	#url = https://github.com/McShelby/hugo-theme-relearn.git
+	url = https://postb99@github.com/postb99/hugo-theme-relearn.git # For testing my own changes
 [submodule "back-office"]
 	path = back-office
 	url = https://postb99@github.com/postb99/poesieland_back-office.git
