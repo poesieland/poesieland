@@ -1,7 +1,10 @@
 var normaliseSpelling = function (builder) {
 
+  console.log('init? ', window.relearn.isLunrInit)
+
     // Define a pipeline function that converts some characters
     var pipelineFunction = function (token) {
+      console.log('entering function')
       if (token.toString().indexOf('œ' > -1)) {
         return token.toString().replace('œ', 'oe')
       } else {
@@ -16,6 +19,4 @@ var normaliseSpelling = function (builder) {
     // searching pipeline
     builder.pipeline.before(lunr.stemmer, pipelineFunction)
     builder.searchPipeline.before(lunr.stemmer, pipelineFunction)
-  }
-
-  alert('lunr plugin loaded')
+  }()

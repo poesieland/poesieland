@@ -115,8 +115,6 @@ themeVariantAuto = [ "relearn-light", "relearn-dark" ]
 [params.relearn.dependencies]
   [params.relearn.dependencies.chartjs]
     name = "Chartjs"
-  [params.relearn.dependencies.lunrPlugin]
-    name = "LunrPlugin"
 
 [params.imageEffects]
   border = false
