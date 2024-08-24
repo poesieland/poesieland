@@ -19,4 +19,8 @@ var normaliseSpelling = function (builder) {
     // searching pipeline
     builder.pipeline.before(lunr.stemmer, pipelineFunction)
     builder.searchPipeline.before(lunr.stemmer, pipelineFunction)
-  }()
+  }
+
+  var idx = lunr(function () {
+    this.use(normaliseSpelling)
+  })
